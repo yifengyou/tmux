@@ -1,2 +1,1 @@
-# tmux
-tmux 配置文件
+Prepare to be tmux config repo
