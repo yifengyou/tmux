@@ -1,6 +1,10 @@
 #!/bin/bash
 
-cp .tmux.conf ~/  -a
+if [ -f ~/.tmux.conf ] ; then
+	mv ~/.tmux.conf ~/.tmux.conf.bak
+fi
+
+cp tmux.conf ~/.tmux.conf  -a
 ls -alh ~/.tmux.conf
 echo "All done!"
 
